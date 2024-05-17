@@ -1,0 +1,107 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    align-items: center;
+    background-color: #333;
+    color: white;
+    display: flex;
+    font-family: "DM Serif Display", sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border-radius: 10px;
+    display: block;
+    height: 500px;
+    margin: 0 auto 0 240px;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.cv-button {
+	border-radius: 5px;
+	border: 1px solid white;
+	display: inline-block;
+	font-family: Antonio;
+	font-size: 18px;
+    margin-top: 50px;
+	padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.overlay-text {
+    font-size: 105px;
+    line-height: 0.9;
+    padding: 0px;
+    position: absolute;
+    top: 53%;
+    right: calc(44%);
+    transform: translate(0, 5%);
+    z-index: 2;
+}
+
+.title {
+    font-family: "Inter", sans-serif;
+    margin-top: 50px;
+}
+
+.title-position {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.title-location {
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    body {
+        align-items: start;
+        padding-top: 20px;
+    }
+
+    img {
+        height: auto;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .cv-button {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        margin-top: 30px;
+    }
+
+    .title-position {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    .overlay-text {
+        font-size: 45px;
+        position: static;
+        margin-top: 30px;
+        text-shadow: unset;
+        transform: none;
+    }
+}
